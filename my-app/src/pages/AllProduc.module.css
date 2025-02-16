@@ -1,0 +1,262 @@
+*{
+  font-family: Arial;
+}
+
+.productCard {
+    display: flex;
+    flex-direction: column;
+    background-color: #f3f3f3; 
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out, box-shadow 0.3s ease;
+    width: 100%; 
+    max-width: 300px;
+    margin: 20px auto; 
+  }
+  
+  .productCard:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .productImage {
+    width: 100%;
+    height: 150px;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+  
+  .productTitle {
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #333;
+    margin-top: 10px;
+  }
+  
+  .productDescription {
+    font-size: 1em;
+    color: #555;
+    margin-top: 10px;
+    height: 60px;
+    overflow: hidden;
+  }
+  
+  .productLocation {
+    font-size: 0.9em;
+    color: #777;
+    margin-top: 5px;
+  }
+  
+  .productButton {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 15px;
+    transition: background-color 0.3s;
+  }
+  
+  .productButton:hover {
+    background-color: #0056b3;
+  }
+  
+
+  .productContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+    gap: 20px;
+    justify-items: center; 
+  }
+  
+
+  @media (max-width: 768px) {
+    .productCard {
+      max-width: 90%; 
+    }
+  }
+  .seachSection{
+    margin-top: 30px;
+    display: flex;
+  }
+  .wordH{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+  }
+  .input {
+    width: 50%;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+ border-top-left-radius: 8px;
+ border-bottom-left-radius: 8px;
+    outline: none;
+    transition: all 0.3s ease;
+  }
+  
+  .input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  .input::placeholder {
+    color: #999;
+    font-style: italic;
+  }
+  
+  .input:disabled {
+    background-color: #f4f4f4;
+    cursor: not-allowed;
+  }
+  .btnSearch{
+    border: 2px solid #ddd;
+    background-color: #ffffff;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+  .btnSearch:hover{
+    background-color: #dedede;
+ 
+
+  }
+  .loader {
+    text-align: center;
+    padding: 20px;
+    font-size: 1.2em;
+    color: #666;
+  }
+  
+  .endMessage {
+    text-align: center;
+    padding: 20px;
+    font-size: 1.1em;
+    color: #999;
+    border-top: 1px solid #eee;
+    margin-top: 20px;
+  }
+
+.filterWordBlock{
+  cursor: pointer;
+}
+
+.notFoundMessage{
+  margin-left: 10px;
+  color: red;
+}
+
+.title{
+  margin-top: 30px;
+display: flex;
+  font-weight: 400;
+  font-size: 20px;
+justify-content: center;
+}
+
+.btn{
+
+  margin-left: 15px;
+  background-color: #19A3F7;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-right: 15px;
+  color: white;
+  font-weight: 400;
+  font-size: 18px;
+ }
+ .btn:hover{
+  background-color: #1b8fd6;
+ }
+
+ .filter{
+  margin-top: 10px;
+  margin-left: 274px;
+  border: 2px solid #ddd;
+  background-color: #ffffff;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  padding: 8px 55px;
+ }
+ .filter:hover{
+  background-color: #dedede;
+
+ }
+
+ .showContent{
+  display: block;
+  margin-left: 20px;
+
+width: 200px;
+
+ }
+ .filterWordBlock{
+  display: flex;
+  margin-top: 10px;
+  border: 2px solid #ddd;
+  padding: 8px;
+ }
+ .filterWordBlock:hover{
+  background-color: #dedede;
+ }
+
+ .CarFilter{
+margin-left: 10px;
+margin-top: 20px;
+ }
+ .flatFilter{
+  margin-left: 10px;
+margin-top: 20px;
+ }
+ .serviceFilter{
+  margin-left: 10px;
+  margin-top: 20px;
+ }
+ .CarFilter input{
+  margin-left: 10px;
+  border: 2px solid #ddd;
+padding: 10px;
+width: 177px;
+ }
+ .CarFilter select{
+  margin-left: 10px;
+  border: 2px solid #ddd;
+padding: 10px;
+width: 177px;
+ }
+
+ .flatFilter input{
+  margin-left: 10px;
+  border: 2px solid #ddd;
+padding: 10px;
+width: 177px;
+ }
+ .flatFilter select{
+  margin-left: 10px;
+  border: 2px solid #ddd;
+padding: 10px;
+width: 177px;
+ }
+
+ .serviceFilter input{
+  margin-left: 10px;
+  border: 2px solid #ddd;
+padding: 10px;
+width: 177px;
+ }
+ .serviceFilter select{
+  margin-left: 10px;
+  border: 2px solid #ddd;
+padding: 10px;
+width: 177px;
+ }

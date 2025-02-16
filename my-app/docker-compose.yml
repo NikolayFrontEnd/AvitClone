@@ -1,0 +1,30 @@
+version: '3'
+
+networks:
+  dev:
+
+services:
+  nginx:
+    image: nginx:alpine
+    container_name: fullapp-nginx
+    ports:
+      - "80:80"
+    volumes:
+      - './nginx-compose.conf:/etc/nginx/nginx.conf'
+    depends_on:
+      - backend
+      - frontend
+    networks:
+      - dev
+
+  backend:
+    build:
+      context: ./server
+    networks:
+      - dev
+
+  frontend:
+    build:
+      context: .
+    networks:
+       - dev    

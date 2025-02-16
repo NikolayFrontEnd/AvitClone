@@ -1,0 +1,80 @@
+.productDetailContainer {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff; /* Белый фон */
+  border-radius: 12px;
+  padding: 40px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin: 40px auto;
+  width: 85%;
+  max-width: 1200px;
+}
+
+.productImage {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 30px;
+}
+
+.productTitle {
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.productDescription {
+  font-size: 1.2em;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.productDetailsSection {
+  margin-bottom: 30px;
+}
+
+.productDetailsSection h3 {
+  font-size: 1.8em;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.productDetailsSection p {
+  font-size: 1.1em;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.buttonsContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.buttonsContainer button {
+  padding: 15px 30px;
+  font-size: 1.1em;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background-color 0.3s;
+}
+
+.editButton {
+  background-color: #4caf50;
+  color: white;
+}
+
+.editButton:hover {
+  background-color: #45a049;
+}
+
+.deleteButton {
+  background-color: #f44336;
+  color: white;
+}
+
+.deleteButton:hover {
+  background-color: #e53935;
+}

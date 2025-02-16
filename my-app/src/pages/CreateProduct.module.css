@@ -1,0 +1,85 @@
+.container {
+    width: 80%;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 40px;
+    background-color: #f7f9fc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .title {
+    text-align: center;
+    font-size: 2rem;
+    color: #19A3F7;
+    margin-bottom: 20px;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .formGroup {
+    margin-bottom: 20px;
+  }
+  
+  .label {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 8px;
+  }
+  .error {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+  }
+  .input,
+  .textarea,
+  .select {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #fff;
+    transition: border-color 0.3s ease;
+  }
+  
+  .input:focus,
+  .textarea:focus,
+  .select:focus {
+    border-color: #19A3F7;
+    outline: none;
+  }
+  
+  .textarea {
+    height: 120px;
+    resize: vertical;
+  }
+  
+  .select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: #fff;
+    background-position: right 10px center;
+    background-repeat: no-repeat;
+    background-size: 12px;
+  }
+  
+  .submitButton {
+    background-color: #19A3F7;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submitButton:hover {
+    background-color: #1588c3;
+  }
+  

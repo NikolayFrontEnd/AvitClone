@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+}
+
+.header{
+    display: flex;
+    background-color: black;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 400;
+    font-size: 18px;
+    justify-content:end;
+    align-items: center; 
+}
+       .button{
+        width: 220px;
+        margin-left: 15px;
+        background-color: #19A3F7;
+        padding:11px;
+        cursor: pointer;
+        border-radius: 10px;
+        margin-right: 15px;
+       }
+       .button:hover{
+        background-color: #1b8fd6;
+       }
+       .welcome{
+        cursor: pointer;
+        margin-right: 20px;
+               }
+       .welcome:hover{
+color: red;
+       }

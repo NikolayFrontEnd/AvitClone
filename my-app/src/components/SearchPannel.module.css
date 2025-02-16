@@ -1,0 +1,28 @@
+.conteiner{
+    display: flex;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    font-size: 18px;
+}
+.button{
+
+    margin-left: 15px;
+    background-color: #19A3F7;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 15px;
+    color: white;
+    font-weight: 400;
+    font-size: 18px;
+   }
+   .button:hover{
+    background-color: #1b8fd6;
+   }
